@@ -89,7 +89,15 @@
                     </code>
                     <p>This is done if we have an existing git repository and we want to copy its content to a new place.</p>
 
-                    <li>Connecting to the remote repository:</li>
+                    <li>Connecting to the remote repository: </li>
+                    <p>connect to the central repo to push/pull. pull means adopting the changes on the remote repository to your local repository. push merges the changes from your local repository to the remote repository.</p>
+                    <code>
+                        git remote add origin http_url/ssh_url 
+                    </code>
+                    <p>One should always first pull contents from the central repo before pushing so that you are updated with other team members’ work. It helps prevent merge conflicts. Here, master means the master branch (in Git).</p>
+                    <code>
+                        git pull origin master
+                    </code>
                 </ol>
                 
             </article>
