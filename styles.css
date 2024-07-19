@@ -1,4 +1,13 @@
-body {
+html, body {
     background-color: #232121;
     color: antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+#main-doc {
+    margin:0 auto;
+    max-width: 700px;
+    min-width: 300px;
+    width: 60vw;
+    padding:50px 0 50px 0;
 }
