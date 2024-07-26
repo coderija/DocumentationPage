@@ -5,9 +5,76 @@ html, body {
     line-height: 1.5;
 }
 #main-doc {
-    margin:0 auto;
-    max-width: 700px;
-    min-width: 300px;
+    position: absolute;
+    margin-left: 300px;
     width: 60vw;
-    padding:50px 0 50px 0;
+    padding:95px 50px 15px 50px;
+    background: #303130;
+    border-radius: 50px 50px 50px 50px;
 }
+#navbar {
+    position: fixed;
+    top: 215px;
+    bottom: 10px;
+    
+    width: 50%;
+    height: 340px;
+    margin-left: 30px;
+    background: rgb(166 241 191 / 20%) ;
+    border-radius: 50px 50px 50px 50px;
+}
+ .headline{
+    font-size: 50px;
+    text-align: center;
+    margin: 70px;
+}
+#navbar header{
+    margin: 10px 0 10px 40px;
+}
+header{
+    color: #a6f1bf;
+    font-size: x-large;
+   
+}
+#navbar ul{
+    line-height: 2.25;
+}
+#navbar li{
+    list-style: none;
+    position: relative;
+    
+}
+#navbar a{
+    text-decoration:none;
+    color: #bff4d1;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:#2b4333;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+#Reference{
+    border-top: 1px solid #2b4333;
+    margin-top: 50px;
+    
+}
+.reference{
+    margin: 25px;
+    margin-top: 5px;
+}
+section li{
+    margin:20px 0 0 20px ;
+}
+section article{
+    margin: 25px;
+}
+
+  
