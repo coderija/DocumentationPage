@@ -11,17 +11,18 @@ html, body {
     padding:95px 50px 15px 50px;
     background: #303130;
     border-radius: 50px 50px 50px 50px;
+    font-size: 16px;
 }
 #navbar {
     position: fixed;
     top: 215px;
     bottom: 10px;
-    
     width: 50%;
     height: 340px;
     margin-left: 30px;
     background: rgb(166 241 191 / 20%) ;
     border-radius: 50px 50px 50px 50px;
+    font-size: 16px;
 }
  .headline{
     font-size: 50px;
