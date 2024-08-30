@@ -3,7 +3,9 @@ html, body {
     color: antiquewhite;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-}
+    margin: 0;
+    padding: 0;
+ }
 #main-doc {
     position: absolute;
     margin-left: 300px;
@@ -15,19 +17,21 @@ html, body {
 }
 #navbar {
     position: fixed;
-    top: 215px;
+    top: 120px;
     bottom: 10px;
     width: 50%;
-    height: 340px;
+    height: 100%;
     margin-left: 30px;
     background: rgb(166 241 191 / 20%) ;
     border-radius: 50px 50px 50px 50px;
     font-size: 16px;
+    overflow-y: auto;
 }
+
  .headline{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    margin: 70px;
+    margin: 30px;
 }
 #navbar header{
     margin: 10px 0 10px 40px;
@@ -35,7 +39,6 @@ html, body {
 header{
     color: #a6f1bf;
     font-size: x-large;
-   
 }
 #navbar ul{
     line-height: 2.25;
@@ -43,11 +46,11 @@ header{
 #navbar li{
     list-style: none;
     position: relative;
-    
 }
 #navbar a{
     text-decoration:none;
     color: #bff4d1;
+    margin-left: 2px;
 }
 code {
     display: block;
@@ -65,7 +68,6 @@ code {
 #Reference{
     border-top: 1px solid #2b4333;
     margin-top: 50px;
-    
 }
 .reference{
     margin: 25px;
@@ -78,4 +80,108 @@ section article{
     margin: 25px;
 }
 
-/*comment to test git*/  
+/*responsive styles*/
+/*for tablets*/
+@media (max-width: 1024px) {
+
+    #navbar {
+        position: fixed;
+        top: 170px;
+        left: 0;
+        width: 250px;
+        height: 95%;
+        padding: 20px;
+        border-radius: 50px;  
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    #main-doc{
+        position: relative;
+        margin: 5px 20px;
+        width: 350px;
+        font-size: 18px;
+        margin-top: 60px;
+        margin-left: 260px;
+        padding:95px 50px 15px 50px;
+    }
+    .headline {
+        font-size: 40px;
+        margin: 50px;
+        text-align: center; 
+        
+    }
+    section li {
+        margin: 15px 0 0 15px;
+    }
+    section article {
+        margin: 20px;
+    }
+    code {
+        padding: 10px;
+        margin: 3px;
+        line-height: 1.8;
+    }
+
+    #Reference {
+        margin-top: 40px;
+    }
+
+    .reference {
+        margin: 20px;
+        margin-top: 4px;
+    }
+}
+/*for mobiles*/
+@media (max-width: 768px) {
+
+    #navbar {
+        position: fixed;
+        top: 190px;
+        left: 0;
+        width: 90px;
+        height: 95%;
+        padding: px;
+        border-radius: 50px;  
+        font-size: 8px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    #navbar a {
+        margin-left: 0;
+        text-align:left ;
+    }
+    #main-doc{
+        position: relative;
+        margin: 5px 20px;
+        width: 240px;
+        font-size: 8px;
+        margin-left: 150px;
+        padding:30px 10px;
+        border-radius: 10px;
+    }
+    .headline {
+        font-size: 30px;
+        margin: 50px;
+        text-align: center;      
+    }
+    section li {
+        margin: 10px 0 0 10px;
+    }
+    section article {
+        margin: 15px;
+    }
+    code {
+        padding: 10px;
+        margin: 3px;
+        line-height: 1.8;
+    }
+    header {
+    font-size:small ;
+    }
+    #Reference {
+        margin-top: 30px;
+    }
+    .reference {
+        margin: 15px;        
+    }
+}
